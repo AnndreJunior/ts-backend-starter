@@ -1,0 +1,13 @@
+{
+  "name": "project-name",
+  "version": "0.0.1",
+  "main": "src/main.ts",
+  "description": "",
+  "scripts": {},
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED"
+}
