@@ -3,11 +3,22 @@
   "version": "0.0.1",
   "main": "src/main.ts",
   "description": "",
-  "scripts": {},
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
+    "start": "node dist/main.js"
+  },
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
   },
   "keywords": [],
   "author": "",
-  "license": "UNLICENSED"
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/node": "^22.15.2",
+    "tsc-alias": "^1.8.15",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
 }
