@@ -20,6 +20,8 @@
     },
     "forceConsistentCasingInFileNames": true,
 
+    "types": ["vitest/globals"],
+
     "moduleResolution": "node",
     "esModuleInterop": true,
     "skipLibCheck": true
