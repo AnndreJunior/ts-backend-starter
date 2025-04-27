@@ -9,7 +9,7 @@ export default mergeConfig(
       coverage: {
         provider: 'v8',
         enabled: true,
-        include: ['src/**/*.ts'],
+        include: ['src/modules/**/*.ts'],
         exclude: [
           'eslint.config.mjs',
           'vitest.config.ts',
