@@ -4,7 +4,7 @@
   "main": "src/main.ts",
   "description": "",
   "scripts": {
-    "dev": "tsx watch src/main.ts",
+    "dev": "tsx watch --tsconfig ./tsconfig.json src/main.ts",
     "build": "tsc --project tsconfig.build.json && tsc-alias -p tsconfig.build.json",
     "start": "node dist/main.js",
     "lint": "eslint . --fix",
