@@ -1,6 +1,6 @@
 import { FastifyInstance, HookHandlerDoneFunction } from 'fastify'
 import { adaptController } from '../adapters/adapt-controller'
-import { sayHelloFactory } from './factories/say-hello-factory'
+import { makeSayHelloController } from './factories/make-say-hello-controller'
 
 export function mapRoutes(
   server: FastifyInstance,
@@ -10,7 +10,7 @@ export function mapRoutes(
   server.route({
     method: 'GET',
     url: '/hello-world',
-    handler: adaptController(sayHelloFactory()),
+    handler: adaptController(makeSayHelloController()),
   })
   done()
 }

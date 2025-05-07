@@ -1,5 +1,5 @@
 import { SayHelloController } from '@modules/health-check/controllers/say-hello-controller'
 
-export function sayHelloFactory(): SayHelloController {
+export function makeSayHelloController(): SayHelloController {
   return new SayHelloController()
 }
